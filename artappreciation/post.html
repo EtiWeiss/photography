@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="aapics/Pissarro - A Creek in St. Thomas.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+
+<script>
+    var text = '{"post" : [{"title" : "A Creek in St. Thomas", "artist" : "Camille Pissarro", "date" : "1856", "writeup" : "Impressionist painter Camille Pissarro was born in St. Thomas in the Dutch West Indies. The island of St. Thomas, now a part of the U.S. Virgin Islands, is home to an abundant number of coves flanked by cliffs and immaculate beaches. In 1856s A Creek in St. Thomas, Pissarro, newly returned to Paris after dedicating himself to art, drew inspiration from his home and sketchbook to create this ode to a simpler time. With elements of Realism, the artist begins his journey towards Impressionism, incorporating elements of the new American Hudson River School of art. With the soft rose lighting of the sun and magical landscape feel, this piece begins the distortion of reality that feels more like a slowly fading memory than a representational landscape of contemporary French Realists. Pissarros work in this time period tended to be aimed at pleasing the established standard of the Paris Salon, but within the next few years, the artist would befriend Claude Monet and help form the Impressionist Movement. This bridge between Realism and Impressionism can be seen at the National Gallery of Art in Washington, DC."}]}';
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>
