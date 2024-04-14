@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Rene Magritte - The Human Condition.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"The Human Condition","artist":"Rene Magritte","date":"1933","writeup":"Rene Magritte\'s 1933 Surrealist piece The Human Condition examines the nature of reality and plays on the trope of the unreliable narrator. The piece depicts a view from a window of a dirt footpath with a hill in the background, some foliage, and big clouds in the sky. In the room is an easel upon which sits a canvas painted with the exact landscape seen through the window. The painting includes the continuation of the footpath, hill, foliage, clouds. The painting also contains a tree that is only seen on the canvas, with no parts visible by the viewer from the window. Magritte in his typical poking style, tasks the viewer with deciding if the tree is real or imagined. The only evidence of its existence is the reliance on the artist in the universe of the painting to paint a realistic depiction of the view they see. Another interpretation given by Magritte is that the tree exists on two planes, in the room and outside the room. While we only see the representation of the tree on the in-world canvas, we could understand that the tree exists in the unseen background. This conflation of the real and unreal is the artist\'s commentary on how we view memories and the nature of the unseen world. This is even more evident when we realize once again that this entire piece is a representation of that representation. You can see this piece in person at the National Gallery of Art in Washington, DC."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

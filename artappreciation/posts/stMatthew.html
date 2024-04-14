@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Caravaggo - The Calling of Saint Matthew..jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"The Calling Of Saint Matthew","artist":"Caravaggio","date":"1600","writeup":"As a founder of the Baroque style of painting, Caravaggio was a master of tenebrism, painting hard shadow lines in his work to create drama on the canvas. In 1600\'s The Calling of Saint Matthew, the artist depicts the moment that Matthew was called to become a disciple of Jesus. With the hard shadow line of the seemingly open door which lets light into the room pointing directly at Matthew, along with the physical pointing of Jesus, Caravaggio shows that this identification of Matthew is both a physical and metaphysical calling. Matthew, depicted in black with a beard, points at himself in a questioning manner, shocked that a religious figure would be coming to a tax collector to be a representative of the former\'s religious revitalization. The outstretched arm of Jesus from the right side of the canvas is painted in the same style as Michelangelo\'s The Creation of Man where Adam and God touch hands to bring life into mankind. The symbolic similarities of Caravaggio\'s depiction show that by calling Matthew Jesus is breathing new life into the sinner who can repent and follow him. This piece is on display in the Contarelli Chapel at the San Luigi dei Francesi Church in Rome."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

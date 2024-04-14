@@ -28,11 +28,11 @@
     </div>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
-    <div class = "image-container"><img src="../aapics/" width="600px"></div>
+    <div class = "image-container"><img src="../aapics/1583px-Canaletto_-_The_Entrance_to_the_Grand_Canal,_Venice_-_Google_Art_Project.jpg" width="600px"></div>
     <p class="blog" id="writeup"></p>
 
 <script>
-    var text = ''
+    var text = '{"post":[{"title":"The Entrance To The Grand Canal","artist":"Canaletto","date":"1730","writeup":"Painted in the Rococo landscape style, Venetian painter Vincenzo Canaletto\'s 1730 piece The Entrance to the Grand Canal, Venice depicts a scene within the city of Venice. As the premier painter of his day in Venice, Canaletto was devoted to the idea of “views” of his hometown. His ability to capture buildings, life, and light in a way that made the city feel expansive led to Canaletto being considered the greatest topographical painter in history. In this piece, the artist exaggerates a sky with fanciful clouds that bring a magical feeling into arriving at the Grand Canal. The bustling life of the Venetians is on full display with gondolas and boats making their way around the Basilica of Santa Maria della Salute. The golden light hitting the buildings creates a near Romantic view of the artist\'s hometown. This piece is on display at the Museum of Fine Art in Houston, Texas."}]}'
     var obj = JSON.parse(text);
     document.getElementById("title").innerHTML = obj.post[0].title;
     document.getElementById("header").innerHTML = obj.post[0].title;

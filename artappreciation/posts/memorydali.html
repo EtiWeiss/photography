@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Dali - The Persistence of Memory.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"The Persistence Of Memory","artist":"Salvador Dalí","date":"1931","writeup":"Painted as a meditation on cosmic order through a surrealist lens, Salvador Dalí\'s 1931 masterwork The Persistence of Memory depicts fundamental changes in of our notion of the universe. Dalí based his painting on ideas formulated by Albert Einstein in 1905 about special relativity and the warping of time at different speeds. With the melting of the clocks, the artist represents the non-linear experience of time, and the ants devouring a watch shows the decay of the concept of the time/space continuum. While all of the subjects shown on the canvas are warped, decayed, or otherwise dying, the one “normal” constant is nature, especially the geography of Dali\'s home region of Gerona, Spain. The tree upon which a clock is melting stands strong, the water is still housed in the sea, and the cliffs are looming in the background, all unfazed by our cosmic perception. The figure in the center with a clock melted over its back has been interpreted as a self portrait of Dalí, with his eyelashes showing as a surrealist depiction of the human form at rest. This obviously warped figure stands in, what I deem, the present, while the nature stands in the past and the clocks show the changing perception of reality of the figure as its move through space and time. I see the narrative of this piece like Elton John\'s Rocket Man, which tells a story of an astronaut leaving his world for Mars as an allegory for the tension between your past foundation and the journey you wish to be on. As Dalí shows in the painting, the further you get from your roots, the more warped and decayed the fabric of the universe becomes. The only thing that can permeate this is the lasting persistence of your memory of where you came from. This piece is on display at the Museum of Modern Art in New York City."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>
