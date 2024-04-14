@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/JLD - the-death-of-marat-1793.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"The Death Of Marat","artist":"Jacques-Louis David","date":"1793","writeup":"The Death of Marat is a 1793 painting by Neoclassical French master Jacques-Louis David. Painted during the French Revolution, this piece depicts the murder of David\'s friend and revolutionary leader Jean Paul Marat. Showing Marat in his bath with pen in hand, David expresses the revolutionary spirit of cleansing pre-revolution France through Enlightenment ideals. Running in opposition of the opulent styles of the Rococo era, Neoclassicism harkens back to the Classical Age of art seen in the Renaissance and Baroque periods. Where the subject of Classical pieces often contained religions figures, Neoclassical pieces take the iconography of religious Classical art and transpose them onto modern, historical, and political figures. Marat in this piece is portrayed as a martyr for his revolutionary Montagnards party. This piece is also not literal, in the sense that while Marat enjoyed writing in his bathtub, the actual view in his Parisian flat was nothing like it was portrayed by David. This glorification is another tenant of the Neoclassical movement, as seen in other works by David and his contemporaries. This piece can be seen at the Royal Museum of Fine Art of Belgium in Brussels."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

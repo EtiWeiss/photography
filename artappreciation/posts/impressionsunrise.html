@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Monet - impression-sunrise.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"Impression, Sunrise","artist":"Claude Monet","date":"1872","writeup":"Monet\'s Impression Sunrise is widely considered as the first impressionist artwork, painted in 1872 and first displayed in 1874 at an exhibition in Paris. Monet, along with his friends and fellow painters, was excluded from prestigious art shows at Paris\'s museums and galleries due to his artistic style rejecting Romantic style held in high esteem by the artistic elite at the time. To appease the growing schism in the art community, the Paris salon held an exhibition later coined “The Exhibition of the Impressionists”. Derided by critics, this piece, and others of its kind, was mocked as a mere unfinished work with sloppy brushwork. Impressionism, the term the painters of this style took on with ironic praise, challenged the dominating style of the time. The painters would bring canvases and paint to the countryside and paint quickly with intentional brushworks that were not hidden behind clever shading and small brushstrokes. Gone was reliance on photorealism to convey artistic ability; impressionism ushered in a movement where the painting conveyed how it felt to see that view. This piece hangs today at the Musée Marmottan Monet."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

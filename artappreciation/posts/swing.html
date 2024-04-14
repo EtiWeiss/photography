@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Jean-Honoré Fragonard - The Swing.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"The Swing","artist":"Jean-Honoré Fragonard","date":"1767","writeup":"A masterpiece of the Rococo Art Movement, Jean-Honoré Fragonard\'s 1767 paining The Swing depicts a young woman on a swing. The theatrical lighting is less reminiscent of the Baroque era that came before with the renowned hard tenebristic shadows, but this piece still features a strong overhead light source, just with more illumination in the shadows. Hiding in those shadows two men are present: one who pushes the swing and another who lusts after the woman whilst hiding in a bush. The warm colors of the dress contrast against the cool colors of the trees and surrounding foliage making the subject further swing off the canvas as if she were swinging outward towards the viewer. Due to this, the viewer can establish a connection with the young man in the bush as we likewise reach out to find ourselves existing in Fragonard\'s world. The soft shading and curving lines throughout the canvas show a whimsical like setting that convey a sense of lightness, floating, and an all around non-serious narrative. These descriptions of many Rococo era paintings led many artists and the public to crave a more noble art style, ushering in the Neoclassical era at a time of major change in Europe with the French Revolution just around the corner and the rise of Napoleon and the wars that followed. This piece is on display at the Wallace Collection in London."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

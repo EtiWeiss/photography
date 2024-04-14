@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Rene Magritte - Son of Man.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"The Son Of Man","artist":"Rene Magritte","date":"1964","writeup":"René Magritte\'s 1964 painting The Son of Man exemplifies the surrealist movement\'s concept of subtle unease. White other surrealist pieces use techniques to create illogical and unnerving depictions, like Salvador Dali\'s persistence of memories use of drooping clocks, Magritte preferred a less obvious approach. The proportions of the man in his paining are slightly off with too long arms and torso with no obvious hip placement, not to mention the too rigid pose. The most glaring feature that surrealists a typical portrait is the presence of a green apple directly over the face of the man with only a small part of the man\'s eyes visible. How did the apple get there and why? Is the apple falling or attached to the hat for some reason? These questions and more exactly what the painter had in mind when creating a surrealist work. What questions about reality can be raised in the mind of the viewer when viewing something like this? This piece is held in a private collection."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>
