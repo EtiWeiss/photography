@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Raphael - the-school-of-atenas-1509-1510.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"School Of Athens","artist":"Raphel","date":"1511","writeup":"The School of Athens is a fresco painted by Renaissance master Raphael between 1509 and 1511. Commissioned by the Vatican to decorate rooms in the Apostolic Palace, Raphael created his most lasting masterworks painting directly on fresh laid plaster on the walls of the Pope\'s residence. Taking inspiration from Greek Philosophers, this scene shows famous figures of the Greek Classical Period collected in a memorial to human reason. The Renaissance in and of itself sought to return art and understanding to the Classical period of antiquity, and Raphael shows this most specifically in his depiction of the central figure of the piece, Plato. With the face not quite that of the Greek sculptures we are used to seeing of Plato, Raphael actually depicts his contemporary Leonardo da Vinci as this central figure due to da Vinci\'s interests in engineering, geometry, and physiology. This work also features a self portrait of the artist on the right side of the fresco standing among Zoroaster and Ptolemy, with Raphael looking directly at the viewer. This piece and the other frescos by Raphael can be seen in person at the Vatican."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

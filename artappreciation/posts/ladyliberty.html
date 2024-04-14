@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Delacroix - the-liberty-leading-the-people.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"Lady Liberty Leading The People","artist":"Delacroix","date":"1830","writeup":"The previous paintings this week have been in the Neoclassical style, a thematic device used by the artists during the French Revolution to highlight the importance of the contemporary political movement. Eugène Delacroix\'s 1830 piece Liberty Leading the People, however, is done in the Romantic style. After Napoleon\'s exploits and the restoration of the French Monarchy, the French democratic revolutionaries needed a way to restore the ideas of \'Liberté, Égalité, Fraternité\'. Painted in the aftermath of the ensuing July Revolution of 1830, Delacroix depicts the final toppling of the French absolute monarchy with a lens of fondness for the first French Revolution. Through this piece, the artist wants to inspire the populace in the spirit of idealized comradery, while the Neoclassical artists before wanted to inspire action through grand historical comparisons. The personification of Liberty as a woman waving the tricolored flag creates a representation of France. With the spirit of freedom, the people can follow to a better, liberal future. The 1830 Revolution saw an end to the Bourbon Restoration of the French throne and the rise of democracy and liberal reforms that have continued to modern day France. This piece is on display at The Louvre in Paris."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

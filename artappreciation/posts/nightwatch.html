@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Rembrant - Nightwatch.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"The Night Watch","artist":"Rembrant","date":"1642","writeup":"Painted in 1642, Rembrandt\'s The Night Watch is one of the most prominent pieces of the Dutch Golden Age. Depicting a militia company beginning its patrol, Rembrandt uses a technique developed in the Baroque Art Movement called Tenebrism. This unnatural lighting style created strong highlights and shadows which tended to cause a candlelight feel to the illumination of the subjects. While other military portraits of the time showed static group formations, Rembrandt conveys motion in his piece, highlighting the real-world presence of this militia and others of its kind. The near life size canvas also drives this feeling, with viewers able to see these subjects in their true size. This piece is the one of the centerpieces of the Rijksmuseum in Amsterdam."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

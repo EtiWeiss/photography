@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/The Oxbow - Thomas Cole.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"The Oxbow","artist":"Thomas Cole","date":"1836","writeup":"Thomas Cole is credited with the founding the Hudson River School of Art. The first truly American Art movement, this Romantic, landscape based school of painters took inspiration from artists in Düsseldorf, Germany before turning to the Hudson River Valley and Upper Appalachian for subjects. These landscape paintings had an almost mystical glow to them which represented the godliness of nature. The main tenants of this movement focused on discovery, exploration, and settlement of the American wilderness. Much of the work of these artists lead to an increased desire for Westward Expansion, preservation of what are now National Parks and Forests, and a decrease in Urbanization. Often showing a composite of views of a location, these paintings commonly depict agriculture running up against a rugged wilderness, a theme of civilizing. This piece, 1836\'s The Oxbow, is a Romanticized panorama of the Connecticut River seen from Mount Holyoke in Massachusetts and is one of the foundational pieces of the movement. See if you can find the sneaky self portrait of the artist painting this scene. This piece can be seen in person in the American Art Wing at the Metropolitan Museum of Art in New York City."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

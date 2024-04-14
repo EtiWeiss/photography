@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Monet - the-japanese-bridge-the-water-lily-pond-1899.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"Bridge Over A Pond Of Water Lilies","artist":"Claude Monet","date":"1899","writeup":"After Claude Monet\'s earlier successes in the1860s and the foundation of Impressionism in the 1870s, Monet relocated his family away from Paris in 1883 to the town of Giverny, located about 50 miles from the city center. There the family grew a garden of flowers and eventually expanded their property to include a nearby pond. This pond would become the main focus of Monet\'s work in the final decades of his career. In 1899, Monet devoted a set of series to the water lilies of the pond, starting with a series of 12 paintings of the Japanese style bridge. Growing more constrained by the limitations of the Impressionist style, this series, and the over 200 paintings of water lilies that followed, began to stretch the bounds of realism into the realm of abstraction. While exploring the reflections of the subjects in the water, Monet\'s paintings started to become a blend of color with a more amorphous form, but still straddled the line of the realist form. These paintings have become legendary in the art world and have been a source of inspiration to many of the Impressionist reactionaries and Abstract artists. This specific piece hangs at the Metropolitan Museum of Art in New York City."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

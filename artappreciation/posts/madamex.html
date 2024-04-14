@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/John Singer Sargent - Madame-xpg.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"Portrait Of Madame X","artist":"John Singer Sargent ","date":"1884","writeup":"Painted by the leading portrait painter of his generation, 1884\'s Portrait of Madame X is the most prominent work of American expat John Singer Sargent. Depicting Parisian socialite Virginie Amelie Avegno Gautreau, the strong contrast between her pale skin and the black dress along with the pose is reminiscent of Greek marble sculptures. The dark background painted in brown helps to contrast the skin tones as well, allowing the subject and the dress to pop off the background like portrait mode on today\'s cameras. The forward-facing body and turned face highlight an assertiveness of the subject along with a sexuality controlled by Madame X. Rather than painting an erotic portrait, Sargent chose to depict an elegance where the subject restrains from fully enticing the viewer, but instead presents a beauty, albeit suggestive, controlled by the grace and charm of the central figure. This piece is on display in the American Art Wing of the Metropolitan Museum of Art in New York City."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

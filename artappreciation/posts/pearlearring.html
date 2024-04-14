@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Vermeer - Girl with the Pearl Earring.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"Girl With The Pearl Earring","artist":"Johannes Vermeer","date":"1655","writeup":"The most iconic work by Dutch Golden Age painter Johannes Vermeer, 1665\'s Girl with a Pearl Earring is less a portrait and more of a ‘tronie\'. Depicting the scene not in terms of recreating the sitter on canvas for time immemorial, this genre is more of a character study on facial expression and posture. This piece balances the nuances of a still life painting while capturing the mystique of the girl\'s attitude and attire, especially the shine on the pearl earring. The titular girl in the scene is placed on a solid dark background, a theme rarely explored by Vermeer, and her clothing helps transition the darkness to her soft face in the harsh light of the scene. Nicknamed ‘The Mona Lisa of the North\', Vermeer\'s masterpiece has had a long cultural impact and has been displayed, referenced, and iconized to one of the highest degrees of any painting in history. This piece is on display at the Mauritshuis in The Hague, Netherlands."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/1906px-The_Icebergs_(Frederic_Edwin_Church),_1861_(color).jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"The Icebergs","artist":"Frederic Edwin Church","date":"1861","writeup":"After the establishment of the Hudson River School of art in the 1830s and 1840s, a second generation of painters took up the themes of this movement. Frederic Edwin Church was a student of the founder of the art movement, Thomas Cole, in the 1840s, and Church\'s early work took heavy inspiration from the composite style and mystical lumination of Cole\'s work. By the late 1850s, however, Church\'s style began to involve more elaborate detail and his subjects moved away from the Upper Appalachian. A frequent traveler himself, Church befriended Arctic explorer Dr. Isaac Israel Hayes who inspired Church to journey to the North Atlantic along the Canadian East Coast. His 1861 piece The Icebergs was the first of a series of paintings on the sub-Arctic. Many of the viewers at the first exhibition were confused by the lack of narrative found in the piece. The barren bay created by the ice is inhospitable to human life and development and the desolate landscape, therefore, lacked an accustomed theme of the Hudson River School, settlement. However, the theme of exploration is highly prevalent with the broken mast of a ship sitting on the ice. This harkens back to explorer John Franklin\'s failed attempt to find the Northwest Passage in the 1840s. Church\'s friend Dr. Hayes worked on the 2nd Grinnell Expedition to locate Franklin\'s Lost Expedition and later named a peak along the Kennedy Channel between Greenland and Canada after Church. This piece can be seen in person at the Dallas Museum of Art in Texas."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

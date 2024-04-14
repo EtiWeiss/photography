@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/thantopsis.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"Scene From Thanatopsis","artist":"Asher Brown Durand","date":"1850","writeup":"Durand continued with the concept of paying homage and tribute to his friend and mentor Thomas Cole in 1850\'s Scene from “Thanatopsis”.  In this piece, Durand interprets a poem of Cole\'s friend William Cullen Bryant. Deriving from the Greek words ‘Thanatos\' meaning ‘death\' and ‘Opsis\' meaning ‘sight\', this ‘viewing of one\'s death\' is reflected through a Naturalist lens in Bryant\'s poem: “Yet not to thine eternal resting place shalt thou retire alone, nor couldst thou wish [a] couch more magnificent. Thou shalt lie down… [with] the hills rock-ribbed and ancient as the sun, the vales stretching in pensive quietness between; the venerable woods [and] rivers that move in majesty… are but the solemn decorations all of the great tomb of man.” In the trees of the painting, a funeral for Thomas Cole can be seen, with the final resting place that of Bryant\'s own imagination. The poem itself, goes on to contemplate the permanence of the Earth and the creation of mankind within it. Durand\'s works, and those of the Hudson River School, highlight the need for nature and spurred Americans to demand conservation efforts and green spaces in urban environments. Writings of Naturalists like Bryant encourage us, as Thanatopsis says, to “approach thy grave, like one who wraps the drapery of his couch about him, and lies down to pleasant dreams” acknowledging the beauty of the Earth from whence we spawned. This piece is on display in the American Art Wing at the Metropolitan Museum of Art in New York City."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

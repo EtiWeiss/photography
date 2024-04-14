@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagelinks">
+        <header style="text-align: right;">
+            <a href="home.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">About</a>
+            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
+            <a href="../../art.html"></a>
+        </header>
+    </div>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Artemisia Gentileschi - Esther before Ahasuerus.jpg" width="600px"></div>
+    <p class="blog" id="writeup"></p>
+
+<script>
+    var text = '{"post":[{"title":"Esther Before Ahasuerus","artist":"Artemisia Gentileschi","date":"1630","writeup":"As one of the few women given classical training in art during the Baroque period, Italian painter Artemisia Gentileschi became one of the movement\'s most prominent figures. Artemisia\'s style is similar to that of Baroque master Caravaggio. With less focus on dramatic setting and lighting seen in Caravaggio\'s works, Gentileschi focused more on the people depicted and their characterizations. Her paintings are also less idealistic in portraying these people and more naturalistic. This can be seen in her 1630s painting of the Purim story Esther Before Ahasuerus where Queen Esther is depicted in a more common appearance than traditionally idealized in other works. King Ahasuerus is also made to look more comedic than a royal would normally. With the light focused on Esther, the power balance within the scene is shifted from the throne, with the King even leaning out of his seat to get closer to Esther. As she faints from her and the Jewish people\'s fasting prayer for salvation from the evil Haman\'s impending genocide, Esther captures the attention and power of the scene much in the same way Gentileschi worked to subvert the narrative surrounding women. Her works tend to show women having power over men, even going as far as to depict scenes of women killing men like in Judith Slaying Holofernes. This piece is on display at the Metropolitan Museum of Art in New York City."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>
