@@ -27,7 +27,8 @@ h1{
     padding-right: 30px;
   }
   .image-container{
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 30px;
   }
   .flex-item-left {
@@ -37,7 +38,7 @@ h1{
   .flex-item-right {
     flex: 50%;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 300px) {
     .flex-item-right, .flex-item-left {
       flex: 100%;
     }
