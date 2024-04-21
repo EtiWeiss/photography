@@ -41,12 +41,15 @@ h1{
   @media (max-width: 300px) {
     .flex-item-right, .flex-item-left {
       flex: 100%;
+    h1{
+      font-size: 50px;
+    }
     }
   }
 
 .blog{
   text-align: left;
-  margin-left: 100px;
-  margin-right: 120px;
+  margin-left: 20%;
+  margin-right: 20%;
   line-height: 1.5;
 }
