@@ -17,20 +17,25 @@
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="home.html">Home</a>
-            <a href="series.html">Series</a>
-            <a href="about.html">About</a>
-            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html"></a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class = "image-container"><img src="../aapics/Kazmir Malevich - Suprematism.jpg" width="600px"></div>
-    <p class="blog" id="writeup"></p>
-
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post":[{"title":"Suprematism","artist":"Kazimir Malevich","date":"1916","writeup":"Kazimir Malevich was the founder of the Suprematism art movement. Taking ideas from past movements on color theory and abstraction, Malevich conceived of a pure art liberated from the ideal structure of art and earthly representation. In these Suprematist paintings, the artist takes the time/space manipulation of Cubism and fuses it with the anti-representational ideas of Orphism. As Malevich writes in his book The Non-Objective World, “Under Suprematism I understand the primacy of pure feeling in creative art. To the Suprematist, the visual phenomena of the objective world are, in themselves, meaningless; the significant thing is feeling, as such, quite apart from the environment in which it is called forth.” In 1916\'s Suprematism, Malevich creates a layered composition of geometric shapes and primary colors to convey a dynamic movement of these subjects. While adhering to the idea of meaninglessness, the piece seeks to inspire feeling in the viewer through the dynamic interpretations of the layered colors. This is representative of the branch of Suprematism called Dynamic Suprematism This piece is on display at the Regional Museum of Art in Krasnodar, Russia."}]}'
     var obj = JSON.parse(text);

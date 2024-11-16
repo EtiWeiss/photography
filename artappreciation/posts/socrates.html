@@ -17,20 +17,25 @@
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="home.html">Home</a>
-            <a href="series.html">Series</a>
-            <a href="about.html">About</a>
-            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html"></a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class = "image-container"><img src="../aapics/JLD - the-death-of-socrates.jpg" width="600px"></div>
-    <p class="blog" id="writeup"></p>
-
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post":[{"title":"The Death Of Socrates","artist":"Jacques-Louis David ","date":"1787","writeup":"1787\'s The Death of Socrates was painted by Jacques-Louis David in the years immediately preceding the French Revolution. Much in the Neoclassical style, David used his view of French politics to take up a classical story to speak of resisting unjust authority in this sparse, frieze-like composition. The Greek philosopher Socrates was convicted of impiety by the Athenian courts, and rather than renounce his beliefs, he died willingly, discoursing on the immortality of the soul before drinking hemlock. Through a series of carefully articulated gestures and expressions, David\'s figures act out the last moments of Socrates\'s life, as he is about to grasp the cup of hemlock, offered by a disciple who cannot bear to witness the act. This piece, with its parallels drawn between contemporary French politics and Greek antiquity, helped foster revolutionary action and political change much like political cartoons attempt to do today. You can see this piece on display at the Metropolitan Museum of Art in New York City."}]}'
     var obj = JSON.parse(text);

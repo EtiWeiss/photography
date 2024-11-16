@@ -102,3 +102,10 @@ nav ul li a:hover {
     margin-top: 5px; /* Space between image and caption */
     font-size: 40px;
 }
+.aaText {
+    text-align: left;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    line-height: 1.5;
+}

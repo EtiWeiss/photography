@@ -17,20 +17,25 @@
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="home.html">Home</a>
-            <a href="series.html">Series</a>
-            <a href="about.html">About</a>
-            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html"></a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class = "image-container"><img src="../aapics/Georges Seurat - sunday-afternoon-on-the-island-of-la-grande-jatte-1886.jpg" width="600px"></div>
-    <p class="blog" id="writeup"></p>
-
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post":[{"title":"A Sunday Afternoon On The Grande Jatte","artist":"Georges Seurat","date":"1866","writeup":"Pointillism, painting through small, distinct dots of color applied in patterns to form images, was devised by French painter Georges Seurat. This was most famously done in his 1886 masterpiece A Sunday Afternoon on the Island of La Grande Jatte. This piece substantially changed the direction Modern Art was heading in the 1880s, and was the start of the Neo-Impressionist movement. The technique of tiny multi-colored dots allows the viewer to blend colors optically, rather than having the colors blend physically on the canvas. This piece also plays on perception, wherein if the large canvas is viewed from the right side, all the figures appear proportionate. If, however, the viewer is centered on the canvas or on the left side, the man and woman on the right appear as giants over all the other subjects. Seurat also portrays a blending of French culture in this piece, with individuals from all levels of Parisian society: rich couple, middle class families, working class men, courtesans, and soldiers. This piece is on display at the Art Institute of Chicago, and a study of this piece on a smaller canvas is on display at the Metropolitan Museum of Art in New York City."}]}'
     var obj = JSON.parse(text);

@@ -17,20 +17,25 @@
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="home.html">Home</a>
-            <a href="series.html">Series</a>
-            <a href="about.html">About</a>
-            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html"></a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class = "image-container"><img src="../aapics/Albert Bierstadt - Among the Sierra Nevada Mountains.jpg" width="600px"></div>
-    <p class="blog" id="writeup"></p>
-
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post":[{"title":"Among The Sierra Nevada Mountains","artist":"Albert Bierstadt","date":"1868","writeup":"From the second generation of Hudson River School artists, European born Albert Bierstadt began with the movement\'s European predecessors in Düsseldorf. After painting the traditional locales in the Upper Appalachians, Bierstadt turned his attention to the American West, joining Frederick W. Lander\'s 1859 project to develop parts of the Oregon and California Trails via the new Lander\'s Road in what is now Wyoming. Avoiding Civil War service, Bierstadt again travel west in 1863, touring the Yosemite Valley and studying the landscapes along the way. After the war, Bierstadt returned to Europe and completed this piece in 1868, Among the Sierra Nevada Mountains. This massive canvas was displayed around the continent and inspired many to immigrate to the United States in pursuit of the idealized landscapes of the American West. This piece uses an almost absurd lighting arrangement more reminiscent of grand theatrics than Naturalism. This hyper-Romanticism, however, did inspire many to push for conservationist efforts to persevere the true landscapes of the West. Conversely, this piece and others of Bierstadt\'s work, inspired others to adopt the philosophy of Manifest Destiny to colonize and \'civilize\' this territory. This piece, nevertheless, is a seminal piece of American Landscape painting, and is one of the central pieces of the Smithsonian\'s American Art Museum in Washington, DC."}]}'
     var obj = JSON.parse(text);

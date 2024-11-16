@@ -17,20 +17,25 @@
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="home.html">Home</a>
-            <a href="series.html">Series</a>
-            <a href="about.html">About</a>
-            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html"></a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class = "image-container"><img src="../aapics/Rene Magritte - Treachery of Images.jpg" width="600px"></div>
-    <p class="blog" id="writeup"></p>
-
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post":[{"title":"The Treachery Of Images","artist":"Rene Magritte","date":"1929","writeup":"René Magritte perfectly hits on the surrealist concept of questioning reality in his 1929 piece The Treachery of Images. Often called “This is Not a Pipe”, this piece depicts a realistic painting of a pipe with the words “Ceci nest pas one pipe.” This appears to be a pipe, however it says right below that it is not. But of course it is not a tangible pipe, only an artistic rendering of one, begging the commentary that all artistic works are but recreations, imaginations, and depictions of some form of reality. Magritte pokes at the viewer when they conflate an image with reality itself. Surrealist art helps us as viewers to check our own reality, question our own beliefs and preconceived notions, and see the world through a different lens. This piece is on display at the Los Angeles County Museum of Art in California."}]}'
     var obj = JSON.parse(text);

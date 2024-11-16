@@ -13,24 +13,29 @@
         h2{
             font-size: 40px;
         }
-        
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="home.html">Home</a>
-            <a href="series.html">Series</a>
-            <a href="about.html">About</a>
-            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html"></a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class = "image-container"><img src="../aapics/Vincenzo_Camuccini_-_La_morte_di_Cesare.jpg" width="700px"></div>
-    <p class="blog" id="writeup"></p>
+    <p class="aaText" id="writeup"></p></div>
 
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post":[{"title":"The Death Of Julius Caesar","artist":"Vincenzo Camuccini","date":"1806","writeup":"Depicting the events of the Ides of March, Vincenzo Camuccini\'s 1806 work The Death of Julius Caesar recants the historical events of March 15, 44 BCE. Roman senators led by Cassius and Brutus conspired to stab the Emperor, hoping to bring an end to the Roman Dictatorship and a restoration of the Roman Republic. The events, however, led to the Crisis of the Roman Republic, triggering a civil war that resulted in the consolidation of power under Caesar Augustus. The painting, done in the Neoclassical style, shows some senators recoiling in fear as 23 others wield knives stabbing the falling Julius Caesar. As with many paintings in this style, the use of ancient Greek or Roman story can be seen as a contemporary commentary on politics, with this piece produced during the rise of Napoleon. As is famously spoken by the Soothsayer in Shakespeare\'s Julius Caesar, “Beware the Ides of March”. This piece is on display at the National Museum of Capodimonte in Naples, Italy."}]}'
     var obj = JSON.parse(text);

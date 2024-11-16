@@ -17,20 +17,25 @@
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="../../home.html">Home</a>
-            <a href="../../series.html">Series</a>
-            <a href="../../about.html">About</a>
-            <a href="../behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html">Art</a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class="flex-container"><img src="../aapics/Pissarro - A Creek in St. Thomas.jpg" width="70%"></div>
-    <p class="blog" id="writeup"></p>
-
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post" : [{"title" : "A Creek in St. Thomas","artist" : "Camille Pissarro","date" : "1856","writeup" : "Impressionist painter Camille Pissarro was born in St. Thomas in the Dutch West Indies. The island of St. Thomas, now a part of the U.S. Virgin Islands, is home to an abundant number of coves flanked by cliffs and immaculate beaches. In 1856\'s A Creek in St. Thomas, Pissarro, newly returned to Paris after dedicating himself to art, drew inspiration from his home and sketchbook to create this ode to a simpler time. With elements of Realism, the artist begins his journey towards Impressionism, incorporating elements of the new American Hudson River School of art. With the soft rose lighting of the sun and magical landscape feel, this piece begins the distortion of reality that feels more like a slowly fading memory than a representational landscape of contemporary French Realists. Pissarro\'s work in this time period tended to be aimed at pleasing the established standard of the Paris Salon, but within the next few years, the artist would befriend Claude Monet and help form the Impressionist Movement. This bridge between Realism and Impressionism can be seen at the National Gallery of Art in Washington, DC."}]}'
     var obj = JSON.parse(text);

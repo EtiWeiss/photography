@@ -17,20 +17,25 @@
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="home.html">Home</a>
-            <a href="series.html">Series</a>
-            <a href="about.html">About</a>
-            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html"></a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class = "image-container"><img src="../aapics/Rodin - Burghers of Calais.jpg" width="600px"></div>
-    <p class="blog" id="writeup"></p>
-
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post":[{"title":"Burghers Of Calais","artist":"Auguste Rodin","date":"1889","writeup":"1889\'s The Burghers of Calais by French sculptor Auguste Rodin is a monument that presents the emotional turmoil and sacrifice of a group of heroic citizens from the French town of Calais during the Hundred Years\' War. The siege of Calais began in 1346 when the English army attacked the town and forced it to surrender. In exchange for sparring the lives of the townspeople, the English demanded that six burghers (citizens) offer themselves as sacrifices as an example to other towns that might consider resisting the invading army. Rodin\'s sculpture depicts the selected burghers as they prepare to present themselves to the English. The men are shown with their heads bowed and their faces twisted in agony, capturing the fear and anguish they must have felt as they faced the prospect of imminent death. The burghers approached the English army with nooses around their necks carrying the keys to the town. Before they could be killed, Queen Philippa of Hainault, wife of England\'s King Edward III, interceded, sparring the lives of these men. They were eventually released, and Calais remained under English control for over two centuries. This life size statue stands as a reminder of bravery and courage of common citizens in the face of tyranny and is located the gardens of the Musée Rodin in Paris. Subsequent castings of the statue can be found in cities and museums around the world, such as New York City, Tokyo, and Calais."}]}'
     var obj = JSON.parse(text);

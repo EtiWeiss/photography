@@ -17,20 +17,25 @@
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="home.html">Home</a>
-            <a href="series.html">Series</a>
-            <a href="about.html">About</a>
-            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html"></a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class = "image-container"><img src="../aapics/Cezanne - mont-sainte-victoire-1.jpg!HD.jpg" width="600px"></div>
-    <p class="blog" id="writeup"></p>
-
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post":[{"title":"Montagne Sainte Victoire","artist":"Paul Cézanne","date":"1890","writeup":"Paul Cézanne was a French Post-Impressionist from the South of France. His work doubled down on the Impressionist idea of conveying how a subject feels rather than a romanticization of the subject. Cézanne brought more Expressionist elements into his work, including bright colors and geometric shapes. This creative exploration helped form the bridge between Impressionist and Abstract work like cubism. My favorite series of work by Cézanne is Montagne Sainte Victoire, a series of 30 paintings from different angles, times, and weather conditions of the mountain overlooking Aix-en-Provence. This specific painting was completed in 1890 and is held privately. Other works from this series can be seen in museums around the world, including the Metropolitan Museum of Art in NYC and the Museé d\'Orsay in Paris."}]}'
     var obj = JSON.parse(text);

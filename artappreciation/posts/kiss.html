@@ -17,20 +17,25 @@
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="home.html">Home</a>
-            <a href="series.html">Series</a>
-            <a href="about.html">About</a>
-            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html"></a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class = "image-container"><img src="../aapics/Gustav Klimt - The Kiss.jpg" width="600px"></div>
-    <p class="blog" id="writeup"></p>
-
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post":[{"title":"The Kiss","artist":"Gustav Klimt","date":"1908","writeup":"Gustav Klimt is the most prominent artist of the Symbolist and Art Nouveau movements. While a member of the regional Austrian Secession school, he inspired by and promulgated the larger, global Art Nouveau movement, which sought more dynamics and movement in the subjects along with natural representation through floral designs. Born out of a reaction to more institutionalized and historical art, “New Art” searched for a more worldly expression with an incorporation of new materials and techniques. Symbolism, in which Klimt first endeavored, brought a dreamlike poetic stylization to art and literature in the late 19th century. Combining these ideas and styles, Klimt created The Kiss in 1908, taking further inspiration from Japanese art he kept in his Viennese studio, the iconography of Byzantine mosaics, and a personal fascination with depicting romantic intimacy. Painted during Klimt\'s Golden Phase, this piece includes an adornment of gold leaves on the canvas. Art styles like this helped increase a Modernist sentiment in the final decades of the Austro-Hungarian Empire. The piece can be seen in person at the Österreichische Galerie Belvedere in Vienna, Austria."}]}'
     var obj = JSON.parse(text);

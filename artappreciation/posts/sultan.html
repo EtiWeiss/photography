@@ -17,20 +17,25 @@
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="home.html">Home</a>
-            <a href="series.html">Series</a>
-            <a href="about.html">About</a>
-            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html"></a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class = "image-container"><img src="../aapics/Benjamin Constant - In the Sultan's Palace.jpg" width="600px"></div>
-    <p class="blog" id="writeup"></p>
-
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post":[{"title":"In The Sultan\'S Palace","artist":"Benjamin Constant","date":"1850","writeup":"Jean-Joseph Benjamin-Constant was a French painter, who focused much of his work in the French Orientalist art movement. After Napoleon\'s unsuccessful campaign in Syria, artists began taking an increased Romantic look at the North African, Middle East, and Far East\'s cultures, art, and architecture. Seen as a novelty by French Academic Art patrons, this type of art played on stereotypes and cultural othering between the Eastern and Western Worlds. This art almost entirely was done by Western artists, some of whom never visited the places they were painting. That\'s not to say that some of these artist themselves did not see this non-European culture in the same light. Benjamin Constant, for instance, traveled early in his career to Morocco and was moved by the scenes he saw and took inspiration from Islamic artists, architects, and peoples. His paintings, in particular 1850\'s In the Sultan\'s Palace, is favorable towards Islamic architecture and the subjects within the palace, albeit its portrayal is slightly romanticized through the Orientalist lens. While some Orientalist art sought to bring division between and criticism of the cultures, Constant\'s pieces tend to show an extreme appreciation for his non-native culture and fascination to creating art around these themes. This piece hangs in the Utah Museum of Fine Art at the University of Utah."}]}'
     var obj = JSON.parse(text);

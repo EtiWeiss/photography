@@ -17,20 +17,26 @@
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="home.html">Home</a>
-            <a href="series.html">Series</a>
-            <a href="about.html">About</a>
-            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html"></a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class = "image-container"><img src="../aapics/Edgar Degas - the-ballet-class.jpg" width="600px"></div>
-    <p class="blog" id="writeup"></p>
+    <p class="aaText" id="writeup"></p>
 
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post":[{"title":"The Ballet Class","artist":"Edgar Degas","date":"1874","writeup":"The Impressionist Movement was predicated on the idea of capturing fleeting moments. This ephemeral artistic endeavor involved quick brushstrokes that created a feeling of memory recollections. French painter Edgar Degas believed that dancers encapsulated this passing beauty in a live performance. He was especially captivated by ballerinas as their skirts created a motion blur reminiscent of the works of his contemporaries, like Claude Monet. In 1874\'s The Dance Class, Degas depicts a group of ballet students at the old Paris Opera being instructed by famous Ballet master Jules Perrot. The motion of the ballerinas is impressionistic, but the piece overall has a more Romanticized Realism reminiscent of one of Degas\'s influences Eugene Delacroix. Degas as an artist exists in a genre bending location with techniques similar to that of the Impressionists, Realists, and Romantics. These styles converge to make Degas a defining figure of 19th Century art. This piece is on display at the Metropolitan Museum of Art in New York City, and a similar piece from 1874, The Ballet Class, is on display at the Musée d\'Orsay in Paris."}]}'
     var obj = JSON.parse(text);

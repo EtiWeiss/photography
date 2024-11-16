@@ -17,20 +17,25 @@
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="home.html">Home</a>
-            <a href="series.html">Series</a>
-            <a href="about.html">About</a>
-            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html"></a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class = "image-container"><img src="../aapics/Holusai - Great_Wave_off_Kanagawa.jpg" width="600px"></div>
-    <p class="blog" id="writeup"></p>
-
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post":[{"title":"The Great Wave Off Kanagawa","artist":"Hokusai","date":"1831","writeup":"Part of a legendary series of views of the sacred Mount Fuji, Hokusai\'s 1831 masterwork The Great Wave off Kanagawa is one of the most influential works of the 19th century. Also known as Under the Wave off Kanagawa, this piece shows the titular wave before it crashes down on the boats beneath it. In the background is Mount Fuji, tying it in with the other 35 pieces depicting scenes around the mountain. A master of the woodblock printing form, Hokusai carved this image and used a bold shade of blue called “Prussian Blue” which created the depth of blue seen in the image. Hokusai worked in the Ukiyo-e style that focused on the \'floating world\', the stylish society of the Edo period, and, later, on humanity\'s interaction with nature. This piece also includes elements of Buddhism and Shintoism in representing the transitory nature of the world. The wave\'s claw-like depiction can be seen as symbolizing nature\'s attack on humanity and a commentary on the contemporary manner of Japanese society. These prints influenced many Western artists in the 19th and 20th century to push boundaries within art movements. About 100 of the original prints still remain, with versions of this piece able to be viewed in person at a number of museums around the world in cities such as Tokyo, New York, London, Paris, Chicago, and Los Angeles."}]}'
     var obj = JSON.parse(text);

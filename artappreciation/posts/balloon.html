@@ -17,20 +17,26 @@
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="home.html">Home</a>
-            <a href="series.html">Series</a>
-            <a href="about.html">About</a>
-            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html"></a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class = "image-container"><img src="../aapics/Banksy - Girl with Balloon.jpg" width="600px"></div>
-    <p class="blog" id="writeup"></p>
+    <p class="aaText" id="writeup"></p>
 
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post":[{"title":"Girl With Balloon","artist":"Banksy","date":"2002","writeup":"Banksy is the name representing the anonymous street artist from Bristol, UK. Rising to viral notability in the 2000s through his stenciled spray painted public works, Banksy has popularized and legitimized a form of graffiti into mainstream art termed “Street Art”. This post-graffiti movement takes the original concepts of graffiti and elevates them into a new art expression. Instead of the intention to vandalize or leave you mark, Banksy, and the Street Art movement generally, seeks to subvert authority and societal norms and structures through distortions to cultural symbols, political figures, and public spaces. While other types of art are limited to the confines of the frame or canvas, the placement of Street Art, both in time and space, helps to create a larger meaning of the piece in its message. Banksy leaves room for interpretation of his work, like with 2002\'s Girl with Balloon, which can be a symbol for hope or loss of innocence. There are variations of this piece placed in different locales around the world which comment on political and social changes occurring in those regions at that time. A canvas version of this piece was partially shredded at a Sotheby\'s auction in 2018, where it is now held privately and called Love is in the Bin."}]}'
     var obj = JSON.parse(text);

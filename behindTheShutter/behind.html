@@ -5,55 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Behind the Shutter</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .blog {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        }
+    </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="../home.html">Home</a>
-            <a href="../series.html">Series</a>
-            <a href="../about.html">About</a>
-            <a href="behind.html">Behind the Shutter</a>
-            <a href="../art.html">Art Appreciation</a>
-        </header>
-    </div>
-    <div id="title">
-        <h1>Behind the Shutter</h1>
-    </div>
-    <div style="margin-top: 150PX;">
-        <a href="gapstow.html">
-            <img src="../photos/homepage/cpbridge.jpg" width="500px">
-            <h2>Gapstow Bridge - Central Park, NYC</h2>
-        </a>
-    </div>
-    <div style="margin-top: 20PX;">
-        <a href="hiking.html">
-            <img src="../photos/mountains/greenaire.jpg" width="500px">
-            <h2>I Hike 7 Miles for this Shot</h2>
-        </a>
-    </div>
-    <div style="margin-top: 20PX;">
-        <a href="reed.html">
-            <img src="../photos/reed/winter.jpg" width="500px">
-            <h2>Reed</h2>
-        </a>
-    </div>
-    <div style="margin-top: 20PX;">
-        <a href="lakemary.html">
-            <img src="../photos/lakemary/lakemaryfinal.JPG" width="400px">
-            <h2>Lake Mary Turns Blue</h2>
-        </a>
-    </div>
-    <div style="margin-top: 20PX;">
-        <a href="crop.html">
-            <img src="../photos/homepage/snow.JPG" width="400px">
-            <h2>The Art of Cropping</h2>
-        </a>
-    </div>
-    <div style="margin-top: 20PX;">
-        <a href="arches.html">
-            <img src="../photos/homepage/turretarch.JPG" width="400px">
-            <h2>A Night in Arches</h2>
-        </a>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../series.html">Series</li>
+                <li><a href="behind.html">Behind the Shutter</a></li>
+                <li><a href="../art.html">Art Appreciation</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="title">
+            <h1>Behind the Shutter</h1>
+        </div>
+        <div class="blog">
+            <a href="hiking.html">
+                <div class="blogitem">
+                    <img src="../photos/hiking/greenaire.jpg">
+                    <div class="caption">I Hiked 7 Miles for this Shot</div>
+                </div>
+            </a>
+            <a href="gapstow.html">
+                <div class="blogitem">
+                    <img src="../photos/homepage/cpbridge.jpg">
+                    <div class="caption">Gapstow Bridge - Central Park, NYC</div>
+                </div>
+            </a>
+            <a href="reed.html">
+                <div class="blogitem">
+                    <img src="../photos/reed/winter.jpg">
+                    <div class="caption">Editing for Effect</div>
+                </div>
+            </a>
+            <a href="lakemary.html">
+                <div class="blogitem">
+                    <img src="../photos/lakemary/lakemaryfinal.JPG">
+                    <div class="caption">Lake Mary Turns Blue</div>
+                </div>
+            </a>
+            <a href="crop.html">
+                <div class="blogitem">
+                    <img src="../photos/cropping/medsnow.jpg">
+                    <div class="caption">The Art of Cropping</div>
+                </div>
+            </a>
+            <a href="arches.html">
+                <div class="blogitem">
+                    <img src="../photos/homepage/turretarch.JPG">
+                    <div class="caption">A Night in Arches</div>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer style="text-align: center;">Go Outside!</footer>
 </body>
 </html>

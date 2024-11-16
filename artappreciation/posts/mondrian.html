@@ -17,20 +17,25 @@
     </style>
 </head>
 <body>
-    <div id="pagelinks">
-        <header style="text-align: right;">
-            <a href="home.html">Home</a>
-            <a href="series.html">Series</a>
-            <a href="about.html">About</a>
-            <a href="behindTheShutter/behind.html">Behind the Shutter</a>
-            <a href="../../art.html"></a>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1 id="header"></h1>
     <h2 id="artist"></h2>
     <div class = "image-container"><img src="../aapics/Piet Mondrian - Composition with red blue and yellow.jpg" width="600px"></div>
-    <p class="blog" id="writeup"></p>
-
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
 <script>
     var text = '{"post":[{"title":"Composition With Red, Blue And Yellow","artist":"Piet Mondrian","date":"1930","writeup":"Piet Mondrian is the foremost artist of the De Stijl movement, which came out of The Netherlands after World War 1. Mondrian focused his later and most prominent work on the ideas of Neoplasticism, a form of abstract art that is broken down to its most elemental, where the artist conveys universal meaning and ideas through the convergence of primary colors and geometric shapes. Much of the Abstract Art Movement of the early 20th century focused on subconscious representation rather than a romanticism or idealism of landscape or past and current events. This concept is represented here in 1930\'s Composition in Red, Blue, and Yellow, which seeks those universal values and aesthetics through a visual means projected by the artist in a duality between the artist\'s intention and the presumptions we as viewers bring to the canvas. Pieces like this challenge us as viewers to react to the canvas in anger, somberness, awe, and/or calmness, all of which touch on our unconscious beliefs about art, color, and form. The piece can be seen in person at the Kunsthaus Zürich, the largest art museum in Switzerland."}]}'
     var obj = JSON.parse(text);
