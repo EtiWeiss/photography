@@ -8,6 +8,11 @@ body {
     text-align: center;
 }
 
+a {
+    color: inherit;
+    text-decoration: none; 
+}
+
 header {
     background-color: #1e1d1d;
     color: whitesmoke;
@@ -15,7 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     padding-top: 2%;
     padding-right: 5%;
 }
@@ -73,4 +78,27 @@ nav ul li a:hover {
     width: 100%; /* Keep the width responsive */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px; /* Optional: for rounded corners */
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); /* Responsive columns */
+    gap: 40px; /* Space between items */
+    padding: 5%;
+    }
+
+.blogitem {
+    text-align: center; /* Center the caption */
+    overflow: hidden; /* Crop overflow */
+    text-align: center; /* Center the caption */
+}
+
+.blogitem img {
+    width: 100%; /* Make image fill the item */
+    height: 100%; /* Ensure image covers the item */
+    object-fit: cover; /* Crop the image to fit */
+}
+.caption {
+    margin-top: 5px; /* Space between image and caption */
+    font-size: 40px;
 }
