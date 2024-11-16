@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Hopper - automat.jpg" width="600px"></div>
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
+<script>
+    var text = '{"post":[{"title":"The Automat","artist":"Edward Hopper","date":"1927","writeup":"Edward Hopper was a master of American Realism in the first half of the 20th century. As an art movement, this style depicted contemporary American life in ways that limited the dramatics of Romanticized pieces. Hopper\'s pieces, especially those of New York City, tended to focus on themes of loneliness and isolation. One of the series of paintings depicting New York City is categorized by art historians as his Windows Series. One such example is 1927\'s Automat where Hopper depicts a woman sitting alone at a café with a blank, almost melancholy look on her face. We the viewer, see the reflections of the ceiling lights reflected back at us through the big window behind the woman creating a vision of an empty tunnel. The artist also puts us, the viewer, within this café looking over at the woman in an almost voyeuristic fashion. Hopper\'s other work depicting windows also show this feeling of longing to be around others both in the eyes of the subject and the artist. This piece is on display at the Whitney Museum in New York City."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

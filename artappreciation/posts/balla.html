@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Giacomo Balla - Iridescent Interpenetration No.13.JPG" width="600px"></div>
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
+<script>
+    var text = '{"post":[{"title":"Iridescent Interpenetrations No. 13","artist":"Giacomo Balla","date":"1914","writeup":"Italian Futurist artist Giacomo Balla was on e of the firs artists to experiment with abstraction born out of the light emitted from electric lightbulbs. The Futurists beloved in an abstract art form predicted on the idea that color could be free from imitation of an object. This separation of color from representation allowed artists to explore color as the subject, experimenting with depicting motion and feelings through juxtaposition. Asa part of a larger series, 1914\'s Iridescent Interpenetrations No. 13 continues Balla\'s work on motion. The interlaced patterns with the strong vertical lines generate a series of arrows pointing the viewer up and down, creating a tension within the canvas. The shadows growing stronger right to left help to convey a sense of motion as well, with a three dimensioninalism arising from the technique. The colors themselves are patterned in a way expressed by artist Wassily Kandinsky in his 1912 writing On the Spiritual in Art where the artist expressed an antitheses between green/red and yellow/blue. This further adds to the tension of the canvas with the bottom and top sections seeming to converge against each other. These colors also play on the four elements, with red = fire, blue = water, green = earth, and yellow = air. Some pieces of this series can be found at the Gallery Modern Art in Turn, Italy"}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

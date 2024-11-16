@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Lichetenstein - Big Painting no 6.jpg" width="600px"></div>
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
+<script>
+    var text = '{"post":[{"title":"Big Painting No. 6","artist":"Roy Lichtenstein","date":"1965","writeup":"Roy Lichtenstein\'s series on Brushstrokes plays on techniques and styles of the Abstract and Pop Art movements. The artist takes the concept that all painting is made of brushstrokes and simplifies the concept down to painting brushstrokes themselves. The series consists of different colors and shapes of the brushstrokes, all on larger canvases, each created traditionally with thousands of normal brushstrokes. This is the artistic equivalent of building a seven-foot candy corn out of thousands of mini candy corns. The subject of the fluid painting motion done in static memorialization, pokes at the concept of Jackson Pollock\'s Abstract Expressionist fluid and splatter paintings. While Pollock, and others in this style, show the result of the paint\'s movement on the canvas, Lichtenstein in this series preserves the stroke and creates a series of monuments to the act of painting. This specific piece, 1965\'s Big Picture no. 6, can be seen in person at the Kunstsammlung Nordrhein-Westfalen in Düsseldorf, Germany."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

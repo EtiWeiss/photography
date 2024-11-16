@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Indiana - LOVE.jpg" width="600px"></div>
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
+<script>
+    var text = '{"post":[{"title":"LOVE","artist":"Robert Indiana","date":"1964","writeup":"Created by Robert Indiana in 1964, Love, is a simplistic Pop Art image that has been reproduced in a variety of settings. Originally sent as an image on a card to friends of the artist, Indiana was commissioned in 1965 to produce this image on the MOMA\'s Christmas Card. Featuring the letters L, O, V, and E in red with a serifed font, the image is unique in its stacking of the letters with the O being oblong and tilted at an angle to decrease the negative space between the tangential letters. In the following decades, the original image was crafted into sculptures of varying heights around the world. The first sculpture was done for the Indianapolis Museum of Art, and other statues can be seen in person in NYC on the corner of 6th Ave and West 55th street, the Kasmin Gallery, and the Pratt Institute, as well as in Provo, UT at the BYU Museum of Art."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Mikayla Vaughn Art</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../series.html">Series</a></li>
+                <li><a href="../../behindTheShutter/behind.html">Behind the Shutter</a></li>
+                <li><a href="../../art.html">Art Appreciation</a></li>
+                <li><a href="../../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="header"></h1>
+    <h2 id="artist"></h2>
+    <div class = "image-container"><img src="../aapics/Frantisek Kupka - Disks of Newton.jpg" width="600px"></div>
+    <p class="aaText" id="writeup"></p>
+    <footer style="text-align: center;">Go Outside!</footer>
+<script>
+    var text = '{"post":[{"title":"Disks of Newton","artist":"Frantisek Kupka","date":"1911","writeup":"Czech painter Frantisek Kupka was one of the first artists to venture into pure color abstraction. Kupka, a promulgator of the Orphist art movement, theorized that color and shapes could be derived from technical exercises of subjective motifs seen in the mind\'s eye, ignoring subject matter found in nature. This \'Pure Art\' cidealization is seen in 1911\'s Disks of Newton, Study for Fugue in Two Colors where the artist takes the color theory wheel and creates a dynamic interconnectivity of color using luminance to create juxtaposed depth. With form derived solely from color, Kupka\'s concept of the power of dynamic color is proven when color is freed from representational function. The shifting of the color disks behind the central red disk shows a glimpse of these shapes spinning in the mind of the artist. The Orphism movement helped representational ideas in the Cubist movement that followed. This piece is on display at the Philadelphia Museum of Art in Pennsylvania."}]}'
+    var obj = JSON.parse(text);
+    document.getElementById("title").innerHTML = obj.post[0].title;
+    document.getElementById("header").innerHTML = obj.post[0].title;
+    document.getElementById("artist").innerHTML = obj.post[0].artist + " - " + obj.post[0].date;
+    document.getElementById("writeup").innerHTML = obj.post[0].writeup;
+</script>
+</body>
+</html>
